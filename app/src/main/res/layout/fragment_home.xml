@@ -4,19 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9EF3FF"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="201dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="216dp"
+        android:src="@drawable/avatar2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="337dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="254dp"
+        android:layout_height="44dp"
+        android:text="Andres"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="198dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <FrameLayout
+        android:id="@+id/layout_mentores"
+        android:layout_width="275dp"
+        android:layout_height="323dp"
+        android:backgroundTint="#000000"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="200dp">
+
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
